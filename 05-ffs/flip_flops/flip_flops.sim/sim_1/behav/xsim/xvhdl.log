@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/240225/Documents/digital-elect/05-ffs/flip_flops/flip_flops.srcs/sources_1/new/d_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'd_ff_rst'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/240225/Documents/digital-elect/05-ffs/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 't_ff_rst'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/240225/Documents/digital-elect/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_ff_rst'
+ERROR: [VRFC 10-2987] 'jk_ff_rst' is not compiled in library 'xil_defaultlib' [C:/Users/240225/Documents/digital-elect/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd:74]
+ERROR: [VRFC 10-3782] unit 'testbench' ignored due to previous errors [C:/Users/240225/Documents/digital-elect/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd:38]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/240225/Documents/digital-elect/05-ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_ff_rst.vhd' ignored due to errors

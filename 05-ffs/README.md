@@ -40,7 +40,7 @@
 
 1. Screenshot with simulated time waveforms. Try to simulate both D- and T-type flip-flops in a single testbench with a maximum duration of 200 ns, including reset. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-   ![your figure]()
+   ![your figure](timeFormSimSCRNSHT.png)
 
 ### JK Flip-flop
 
@@ -48,13 +48,36 @@
 
 ```vhdl
 architecture Behavioral of jk_ff_rst is
+    signal q_int : STD_LOGIC;
+begin
+    process (clk)
+    begin
+        if rising_edge(clk) then
+        -- WRITE YOUR CODE HERE
 
-    -- WRITE YOUR CODE HERE
+            if (j = '0' and k = '1') then 
+                sig_q     <= '0';
+                
+            elsif (j = '0' and k = '0') then
+                sig_q     <= sig_q;
+                
+            elsif (j = '1' and k = '0') then
+                sig_q     <= '1';
+             
+            elsif (j = '1' and k = '1') then 
+                sig_q <= not sig_q;
+                
+            elsif (rst = '1') then 
+            	sig_q <= '0';
 
-    -- Output ports are permanently connected to local signal
-    q     <= sig_q;
-    q_bar <= not sig_q;
-end architecture Behavioral;
+            end if;
+        end if;
+    end process;
+    
+    -- output q and q_bar
+    q <= q_int;
+    q_bar <= not q_int;
+end Behavioral;
 ```
 
 ### Shift register

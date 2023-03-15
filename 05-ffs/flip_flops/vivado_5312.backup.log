@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 15 13:49:31 2023
+# Process ID: 5312
+# Current directory: C:/Users/240225/Documents/digitalni-elektronika/05-ffs/flip_flops
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7620 C:\Users\240225\Documents\digitalni-elektronika\05-ffs\flip_flops\flip_flops.xpr
+# Log file: C:/Users/240225/Documents/digitalni-elektronika/05-ffs/flip_flops/vivado.log
+# Journal file: C:/Users/240225/Documents/digitalni-elektronika/05-ffs/flip_flops\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/240225/Documents/digitalni-elektronika/05-ffs/flip_flops/flip_flops.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/240225/Documents/digital-elect/05-ffs/flip_flops' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/240225/Documents/digitalni-elektronika/05-ffs/flip_flops/flip_flops.gen/sources_1', nor could it be found using path 'C:/Users/240225/Documents/digital-elect/05-ffs/flip_flops/flip_flops.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/appz/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1000.723 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 15 13:54:56 2023...

@@ -1,4 +1,4 @@
-# Lab 5: Samuel Gubi
+# Lab 5: Jan Těžký
 
 ## Pre-Lab preparation
 

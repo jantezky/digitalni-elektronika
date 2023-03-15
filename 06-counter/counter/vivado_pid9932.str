@@ -1,0 +1,128 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 9932
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Mar 15 20:51:07 CET 2023
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 2560x1440
+Screen resolution (DPI): 100
+Available screens: 3
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Programy/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/Programy/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	RTX3070
+User home directory: C:/Users/RTX3070
+User working directory: E:/Škola/DE1/digitalni-elektronika/06-counter/counter
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Programy/Xilinx/Vivado
+HDI_APPROOT: D:/Programy/Xilinx/Vivado/2020.2
+RDI_DATADIR: D:/Programy/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: D:/Programy/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/RTX3070/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/RTX3070/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/RTX3070/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/Programy/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/Škola/DE1/digitalni-elektronika/06-counter/counter/vivado.log
+Vivado journal file location: 	E:/Škola/DE1/digitalni-elektronika/06-counter/counter/vivado.jou
+Engine tmp dir: 	E:/Škola/DE1/digitalni-elektronika/06-counter/counter/.Xil/Vivado-9932-DESKTOP-CR729O1
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Programy/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/Programy/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/Programy/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/Programy/Xilinx/Vivado/2020.2
+XILINX_VIVADO: D:/Programy/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/Programy/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,115 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 109 MB (+111500kb) [00:00:02]
+// [Engine Memory]: 1,115 MB (+1017530kb) [00:00:02]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: E:\Škola\DE1\digitalni-elektronika\06-counter\counter\counter.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 118 MB (+4070kb) [00:00:05]
+// WARNING: HEventQueue.dispatchEvent() is taking  1121 ms.
+// Tcl Message: open_project E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programy/Xilinx/Vivado/2020.2/data/ip'. 
+// Project name: counter; location: E:/Škola/DE1/digitalni-elektronika/06-counter/counter; part: xc7a50ticsg324-1L
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 73 MB. Current time: 3/15/23, 8:51:08 PM CET
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 130 MB (+6171kb) [00:00:33]
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(behavioral) (top.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(behavioral) (top.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(behavioral) (top.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top(behavioral) (top.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 137 MB (+657kb) [00:00:41]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A
+// Tcl Message: synth_design -rtl -rtl_skip_mlo -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -rtl_skip_mlo -name rtl_1 Starting synth_design Using part: xc7a50ticsg324-1L Top: top 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,520 MB. GUI used memory: 81 MB. Current time: 3/15/23, 8:51:48 PM CET
+// TclEventType: ELABORATE_START

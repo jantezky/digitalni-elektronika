@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.runs/synth_1/top.tcl"
+  variable script "E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,28 +70,25 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a50ticsg324-1L
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.cache/wt [current_project]
-set_property parent.project_path C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.xpr [current_project]
+set_property webtalk.parent_dir E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.cache/wt [current_project]
+set_property parent.project_path E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:nexys-a7-50t:part0:1.2 [current_project]
-set_property ip_output_repo c:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.cache/ip [current_project]
+set_property ip_output_repo e:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd
-  C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd
-  C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/hex_7seg.vhd
-  C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/top.vhd
+  E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd
+  E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd
+  E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/hex_7seg.vhd
+  E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/top.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -102,8 +99,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.srcs/constrs_1/new/nexys-a7-50t.xdc
-set_property used_in_implementation false [get_files C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.srcs/constrs_1/new/nexys-a7-50t.xdc]
+read_xdc E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/constrs_1/new/nexys-a7-50t.xdc
+set_property used_in_implementation false [get_files E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/constrs_1/new/nexys-a7-50t.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

@@ -79,11 +79,11 @@ begin
   begin
 
     sig_rst <= '0';
-    wait for 12 ns;
+    wait for 15 ns;
 
     -- Reset activated
     sig_rst <= '1';
-    wait for 70 ns;
+    wait for 65 ns;
 
     -- Reset deactivated
     sig_rst <= '0';
@@ -105,13 +105,13 @@ begin
 
     -- Change counter direction
     sig_cnt_up <= '1';
-    wait for 380 ns;
+    wait for 255 ns;
     sig_cnt_up <= '0';
-    wait for 186 ns;
+    wait for 125 ns;
 
     -- Disable counting
     sig_en <= '0';
-    wait for 86 ns;
+    wait for 25 ns;
     -- Enable counting again
     sig_en <= '1';
 

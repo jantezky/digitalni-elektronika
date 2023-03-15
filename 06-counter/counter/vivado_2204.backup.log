@@ -1,0 +1,195 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 15 20:39:19 2023
+# Process ID: 2204
+# Current directory: E:/Škola/DE1/digitalni-elektronika/06-counter/counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14388 E:\Škola\DE1\digitalni-elektronika\06-counter\counter\counter.xpr
+# Log file: E:/Škola/DE1/digitalni-elektronika/06-counter/counter/vivado.log
+# Journal file: E:/Škola/DE1/digitalni-elektronika/06-counter/counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.gen/sources_1', nor could it be found using path 'C:/Users/240225/Documents/digitalni-elektronika/06-counter/counter/counter.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys-a7-50t:part0:1.2. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programy/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cnt_up_down' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_cnt_up_down_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cnt_up_down'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_cnt_up_down'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+"xelab -wto dd79ce9a17f444bbabb135ef85ca3c04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_cnt_up_down_behav xil_defaultlib.tb_cnt_up_down -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Programy/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto dd79ce9a17f444bbabb135ef85ca3c04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_cnt_up_down_behav xil_defaultlib.tb_cnt_up_down -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [\cnt_up_down(g_cnt_width=3)\]
+Compiling architecture testbench of entity xil_defaultlib.tb_cnt_up_down
+Built simulation snapshot tb_cnt_up_down_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_cnt_up_down_behav -key {Behavioral:sim_1:Functional:tb_cnt_up_down} -tclbatch {tb_cnt_up_down.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_cnt_up_down.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 800ns
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
+Note: Stimulus process finished
+Time: 510 ns  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_cnt_up_down_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 800ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1120.250 ; gain = 9.734
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cnt_up_down' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_cnt_up_down_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_cnt_up_down'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+"xelab -wto dd79ce9a17f444bbabb135ef85ca3c04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_cnt_up_down_behav xil_defaultlib.tb_cnt_up_down -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Programy/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto dd79ce9a17f444bbabb135ef85ca3c04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_cnt_up_down_behav xil_defaultlib.tb_cnt_up_down -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [\cnt_up_down(g_cnt_width=3)\]
+Compiling architecture testbench of entity xil_defaultlib.tb_cnt_up_down
+Built simulation snapshot tb_cnt_up_down_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
+Note: Stimulus process finished
+Time: 652 ns  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_cnt_up_down' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj tb_cnt_up_down_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_cnt_up_down'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.sim/sim_1/behav/xsim'
+"xelab -wto dd79ce9a17f444bbabb135ef85ca3c04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_cnt_up_down_behav xil_defaultlib.tb_cnt_up_down -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Programy/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto dd79ce9a17f444bbabb135ef85ca3c04 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_cnt_up_down_behav xil_defaultlib.tb_cnt_up_down -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.cnt_up_down [\cnt_up_down(g_cnt_width=3)\]
+Compiling architecture testbench of entity xil_defaultlib.tb_cnt_up_down
+Built simulation snapshot tb_cnt_up_down_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: Stimulus process started
+Time: 0 ps  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
+Note: Stimulus process finished
+Time: 405 ns  Iteration: 0  Process: /tb_cnt_up_down/p_stimulus  File: E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Wed Mar 15 20:49:25 2023] Launched synth_1...
+Run output will be captured here: E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.runs/synth_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a50ticsg324-1L
+Top: top
+INFO: [Device 21-403] Loading part xc7a50ticsg324-1L
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1771.145 ; gain = 247.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/top.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'clock_enable' [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd:41]
+	Parameter g_MAX bound to: 25000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_enable' (1#1) [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'clock_enable__parameterized0' [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd:41]
+	Parameter g_MAX bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_enable__parameterized0' (1#1) [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'cnt_up_down' [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd:44]
+	Parameter g_CNT_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cnt_up_down' (2#1) [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'cnt_up_down__parameterized0' [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd:44]
+	Parameter g_CNT_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cnt_up_down__parameterized0' (2#1) [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'hex_7seg' [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'hex_7seg' (3#1) [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/hex_7seg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'top' (4#1) [E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/top.vhd:43]

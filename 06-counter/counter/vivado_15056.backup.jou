@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 15 22:29:39 2023
+# Process ID: 15056
+# Current directory: E:/Škola/DE1/digitalni-elektronika/06-counter/counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7124 E:\Škola\DE1\digitalni-elektronika\06-counter\counter\counter.xpr
+# Log file: E:/Škola/DE1/digitalni-elektronika/06-counter/counter/vivado.log
+# Journal file: E:/Škola/DE1/digitalni-elektronika/06-counter/counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.xpr
+update_compile_order -fileset sources_1
+set_property used_in_simulation true [get_files  E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/top.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source top.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top clock_enable [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top_arch behavioral [get_filesets sim_1]
+set_property top_file E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+relaunch_sim
+close_sim

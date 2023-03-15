@@ -3,4 +3,7 @@
 Nov 18 2020
 09:47:47
 E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd,1678909449,vhdl,,,,tb_cnt_up_down,,,,,,,,
-E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd,1678908180,vhdl,E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sim_1/new/tb_cnt_up_down.vhd,,,cnt_up_down,,,,,,,,
+E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/clock_enable.vhd,1678908180,vhdl,E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/top.vhd,,,clock_enable,,,,,,,,
+E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/cnt_up_down.vhd,1678908180,vhdl,E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/top.vhd,,,cnt_up_down,,,,,,,,
+E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/hex_7seg.vhd,1678908180,vhdl,E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/top.vhd,,,hex_7seg,,,,,,,,
+E:/Škola/DE1/digitalni-elektronika/06-counter/counter/counter.srcs/sources_1/new/top.vhd,1678910609,vhdl,,,,top,,,,,,,,
